@@ -1,0 +1,10 @@
+//ignoring certain files
+node_modules/
+yarn.lock
+
+
+# next.js build output
+.next
+
+# Mac files
+.DS_Store
