@@ -1,2 +1,3 @@
 # ripCentral-FE
-Front end code for ripCentral
+ripCentral next.js app
+
