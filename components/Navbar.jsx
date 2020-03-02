@@ -44,7 +44,7 @@ const LinkContainer = styled.div`
 `;
 
 const NavLink = styled.a`
-  margin-left: 2em;
+  margin-left: 3em;
   font-family: "Nunito sans", sans-serif;
   color: ${mintCream};
   font-size: 1.3em;
@@ -56,7 +56,7 @@ const IconsContainer = styled.div`
   grid-column: 3 / span 2;
   font-size: 1.5em;
   margin-top: -1.5em;
-  margin-left: 4em;
+  margin-left: 6em;
 `;
 
 const Icons = styled.div`
