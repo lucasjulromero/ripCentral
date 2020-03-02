@@ -22,7 +22,7 @@ const RipCentralLogo = styled.h1`
   font-size: 2em;
   grid-column: 1 / span 2;
   padding-left: 1em;
-  font-weight: 500;
+  font-weight: 300;
   display: flex;
 `;
 
