@@ -5,8 +5,7 @@ import {
   faCannabis,
   faShoppingCart,
   faUserCircle,
-  faSearch,
-  faFileExcel
+  faSearch
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -79,7 +78,7 @@ const Navbar = () => {
         </RipCentralLogo>
         <LinkContainer>
           <NavLink>Shop</NavLink>
-          <NavLink>Blog</NavLink>
+          <NavLink>Learn</NavLink>
           <NavLink>Contact</NavLink>
           <NavLink>Cannabis Chronicles</NavLink>
         </LinkContainer>
