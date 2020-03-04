@@ -46,9 +46,14 @@ const LinkContainer = styled.div`
 const NavLink = styled.a`
   margin-left: 3.5em;
   font-family: "Nunito sans", sans-serif;
-  color: ${limeGreen};
   font-size: 1.3em;
   font-weight: 300;
+  color: white;
+  cursor: pointer;
+
+  :hover {
+    color: ${limeGreen};
+  }
 `;
 
 const IconsContainer = styled.div`
@@ -65,6 +70,11 @@ const Icons = styled.div`
 
 const Icon = styled.div`
   margin-left: 2em;
+  color: white;
+  cursor: pointer;
+  :hover {
+    color: ${limeGreen};
+  }
 `;
 const Navbar = () => {
   return (

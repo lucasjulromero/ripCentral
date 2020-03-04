@@ -5,10 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { limeGreen, lizardGreen } from "../styles/colors";
 
 const Container = styled.div`
-  height: 30em;
-  width: 30em;
-  border: 2px solid white;
-  border-radius: 50%;
   position: absolute;
   top: 0;
   margin-top: 15em;
@@ -16,7 +12,7 @@ const Container = styled.div`
 `;
 const HeaderIconContainer = styled.div`
   display: flex;
-  margin-top: 5em;
+  margin-top: 3em;
   height: 50vh;
   width: 100%;
   color: ${limeGreen};
@@ -24,8 +20,8 @@ const HeaderIconContainer = styled.div`
 const RipCentralHomeHeader = styled.h1`
   font-family: "Nunito sans", sans-serif;
   font-weight: 300;
-  font-size: 4em;
-  margin-left: 1.4em;
+  font-size: 2.5em;
+  margin-left: 5em;
 
   .icon {
     font-size: 0.5em;
@@ -35,22 +31,22 @@ const RipCentralHomeHeader = styled.h1`
 `;
 
 const SloganContainer = styled.div`
-  max-width: 25em;
-  margin-top: -0.8em;
+  max-width: 40em;
+  margin-top: -2em;
 `;
 
 const Slogan = styled.p`
-  font-size: 1.6em;
+  font-size: 3em;
   font-weight: 300;
   font-family: "Nunito sans", sans-serif;
-  margin-left: 5em;
+  margin-left: 2em;
   color: white;
 `;
 const Button = styled.button`
-  color: ${limeGreen};
+  color: white;
   background-color: Transparent;
   background-repeat: no-repeat;
-  border: 1px solid ${limeGreen};
+  border: 1px solid white;
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
@@ -58,6 +54,12 @@ const Button = styled.button`
   font-size: 1.5em;
   padding: 0.3em;
   font-weight: 300;
+  margin-top: -2em;
+
+  :hover {
+    background-color: ${lizardGreen};
+    border: 1px solid ${lizardGreen};
+  }
 `;
 
 const RipCentralHomePageHeader = () => {
@@ -75,7 +77,7 @@ const RipCentralHomePageHeader = () => {
                 Unifying marijuana accessories and unbeatable prices.
               </Slogan>
             </SloganContainer>
-            <div style={{ marginLeft: "11em" }}>
+            <div style={{ marginLeft: "14.5em" }}>
               <Button>
                 More <FontAwesomeIcon className="icon" icon={faArrowDown} />
               </Button>
