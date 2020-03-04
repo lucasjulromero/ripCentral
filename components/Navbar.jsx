@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { seaGreen } from "../styles/colors";
+import { limeGreen, darkGrey } from "../styles/colors";
 import {
   faCannabis,
   faShoppingCart,
@@ -18,12 +18,13 @@ const NavbarContainer = styled.div`
   display: grid;
   grid-template-columns: 15% 60% 25%;
   grid-template-rows: 35%;
-  box-shadow: 0px 1px 7px black;
+  box-shadow: 0px 1px 7px ${darkGrey};
+  background-color: ${darkGrey};
 `;
 
 const RipCentralLogo = styled.h1`
   font-family: "Nunito sans", sans-serif;
-  color: ${seaGreen};
+  color: ${limeGreen};
   font-size: 2em;
   grid-column: 1 / span 2;
   padding-left: 1em;
@@ -39,19 +40,19 @@ const CannabisContainer = styled.div`
 const LinkContainer = styled.div`
   grid-column: 2 / span 2;
   grid-template-columns: 25% 25% 25% 25%;
-  margin-left: 14em;
+  margin-left: 15em;
 `;
 
 const NavLink = styled.a`
   margin-left: 3.5em;
   font-family: "Nunito sans", sans-serif;
-  color: ${seaGreen};
+  color: ${limeGreen};
   font-size: 1.3em;
   font-weight: 300;
 `;
 
 const IconsContainer = styled.div`
-  color: ${seaGreen};
+  color: ${limeGreen};
   grid-column: 3 / span 2;
   font-size: 1.5em;
   margin-top: -1.5em;

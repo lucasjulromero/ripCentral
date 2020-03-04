@@ -1,23 +1,25 @@
 import React from "react";
 import styled from "styled-components";
-import { faCannabis } from "@fortawesome/free-solid-svg-icons";
+import { faCannabis, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { seaGreen, peachPuff } from "../styles/colors";
+import { limeGreen, lizardGreen } from "../styles/colors";
 
 const Container = styled.div`
   height: 30em;
   width: 30em;
-  border: 2px solid ${peachPuff};
+  border: 2px solid white;
   border-radius: 50%;
-  margin-left: 10em;
-  margin-top: 10em;
+  position: absolute;
+  top: 0;
+  margin-top: 15em;
+  margin-left: 7em;
 `;
 const HeaderIconContainer = styled.div`
   display: flex;
   margin-top: 5em;
   height: 50vh;
   width: 100%;
-  color: ${peachPuff};
+  color: ${limeGreen};
 `;
 const RipCentralHomeHeader = styled.h1`
   font-family: "Nunito sans", sans-serif;
@@ -33,14 +35,29 @@ const RipCentralHomeHeader = styled.h1`
 `;
 
 const SloganContainer = styled.div`
-  max-width: 20em;
+  max-width: 25em;
+  margin-top: -0.8em;
 `;
 
 const Slogan = styled.p`
   font-size: 1.6em;
   font-weight: 300;
   font-family: "Nunito sans", sans-serif;
-  margin-left: 3.5em;
+  margin-left: 5em;
+  color: white;
+`;
+const Button = styled.button`
+  color: ${limeGreen};
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 1px solid ${limeGreen};
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: "Nunito sans", sans-serif;
+  font-size: 1.5em;
+  padding: 0.3em;
+  font-weight: 300;
 `;
 
 const RipCentralHomePageHeader = () => {
@@ -58,6 +75,11 @@ const RipCentralHomePageHeader = () => {
                 Unifying marijuana accessories and unbeatable prices.
               </Slogan>
             </SloganContainer>
+            <div style={{ marginLeft: "11em" }}>
+              <Button>
+                More <FontAwesomeIcon className="icon" icon={faArrowDown} />
+              </Button>
+            </div>
           </div>
         </HeaderIconContainer>
       </Container>
