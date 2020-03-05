@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { limeGreen, darkGrey } from "../styles/colors";
+import { limeGreen, darkGrey, lizardGreen } from "../styles/colors";
 import {
   faCannabis,
   faShoppingCart,
@@ -14,6 +14,7 @@ const NavbarContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2;
   height: 5em;
   display: grid;
   grid-template-columns: 15% 60% 25%;
@@ -24,7 +25,7 @@ const NavbarContainer = styled.div`
 
 const RipCentralLogo = styled.h1`
   font-family: "Nunito sans", sans-serif;
-  color: ${limeGreen};
+  color: ${lizardGreen};
   font-size: 2em;
   grid-column: 1 / span 2;
   padding-left: 1em;
@@ -53,6 +54,7 @@ const NavLink = styled.a`
 
   :hover {
     color: ${limeGreen};
+    border-bottom: 1px solid ${limeGreen};
   }
 `;
 
@@ -74,6 +76,7 @@ const Icon = styled.div`
   cursor: pointer;
   :hover {
     color: ${limeGreen};
+    border-bottom: 1px solid ${limeGreen};
   }
 `;
 const Navbar = () => {

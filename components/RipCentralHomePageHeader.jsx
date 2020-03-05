@@ -7,6 +7,7 @@ import { limeGreen, lizardGreen } from "../styles/colors";
 const Container = styled.div`
   position: absolute;
   top: 0;
+  text-align: center;
   margin-top: 15em;
   margin-left: 7em;
 `;
@@ -15,17 +16,14 @@ const HeaderIconContainer = styled.div`
   margin-top: 3em;
   height: 50vh;
   width: 100%;
-  color: ${limeGreen};
+  color: ${lizardGreen};
 `;
 const RipCentralHomeHeader = styled.h1`
   font-family: "Nunito sans", sans-serif;
   font-weight: 300;
   font-size: 2.5em;
-  margin-left: 5em;
-
   .icon {
     font-size: 0.5em;
-    margin-left: 0.2em;
     margin-bottom: 0.9em;
   }
 `;
@@ -39,7 +37,6 @@ const Slogan = styled.p`
   font-size: 3em;
   font-weight: 300;
   font-family: "Nunito sans", sans-serif;
-  margin-left: 2em;
   color: white;
 `;
 const Button = styled.button`
@@ -49,12 +46,12 @@ const Button = styled.button`
   border: 1px solid white;
   cursor: pointer;
   border-radius: 8px;
-  overflow: hidden;
   font-family: "Nunito sans", sans-serif;
   font-size: 1.5em;
   padding: 0.3em;
   font-weight: 300;
   margin-top: -2em;
+  margin-left: -10em;
 
   :hover {
     background-color: ${lizardGreen};
