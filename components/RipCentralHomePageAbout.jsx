@@ -74,23 +74,32 @@ const TopSellers = styled.h1`
 `;
 
 const TopSellerItemsContainer = styled.div`
-  border: 1px solid black;
   width: 90vw;
   margin-left: 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 `;
 
 const TopSellerImage = styled.img`
   object-fit: contains;
-  height: 30em;
+  height: 20em;
   width: 20em;
 `;
-const Name = styled.h3`
+const Name = styled.p`
+  color: ${lightGrey};
+  font-weight: 300;
+  font-size: 2em;
   font-family: "Nunito sans", sans-serif;
 `;
 const Description = styled.p`
+  color: ${lightGrey};
+  max-width: 20em;
   font-family: "Nunito sans", sans-serif;
 `;
 const Price = styled.p`
+  color: ${limeGreen};
+  max-width: 20em;
+  font-size: 1.5em;
   font-family: "Nunito sans", sans-serif;
 `;
 const RipCentralHomePageAbout = () => {
@@ -102,10 +111,12 @@ const RipCentralHomePageAbout = () => {
           {topSellers.map(i => {
             return (
               <>
-                <TopSellerImage src={i.image} />
-                <Name>{i.name}</Name>
-                <Description>{i.description}</Description>
-                <Price>{i.price}</Price>
+                <div style={{ marginLeft: "7.5em" }}>
+                  <TopSellerImage src={i.imgUrl} />
+                  <Name>{i.name}</Name>
+                  <Description>{i.description}</Description>
+                  <Price>{i.price}</Price>
+                </div>
               </>
             );
           })}
