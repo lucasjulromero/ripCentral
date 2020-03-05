@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import RipCentralHomePageHeader from "../components/RipCentralHomePageHeader.jsx";
-import RipCentralHomePageAbout from "../components/RipCentralHomePageAbout.jsx";
+import RipCentralTopSellers from "../components/RipCentralTopSellers";
+import RipCentralHomePageAbout from "../components/RipCentralHomePageAbout";
 import Navbar from "../components/Navbar";
 import { darkGrey } from "../styles/colors";
 
@@ -25,6 +26,7 @@ const RipCentralHomePage = () => {
       <Navbar />
       <HomePageBackgroundImage />
       <RipCentralHomePageHeader />
+      <RipCentralTopSellers />
       <RipCentralHomePageAbout />
     </>
   );
