@@ -18,8 +18,7 @@ const topSellers = [
     price: "$30.00"
   },
   {
-    imgUrl:
-      "https://www.water-bongs-glass-pipes.com/3965/oil-glass-smoking-pipe-green-marbles.jpg",
+    imgUrl: "https://thumbs.dreamstime.com/b/glass-pipe-12720785.jpg",
     name: "Extra piece",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
