@@ -7,6 +7,13 @@ import {
   lizardGreen,
   limeGreen
 } from "../styles/colors";
+import { makeStyles } from "@material-ui/core/styles";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
+import { Pagination } from "@material-ui/lab";
+import { red } from "@material-ui/core/colors";
 
 const topSellers = [
   {
@@ -42,8 +49,8 @@ const topSellers = [
   },
   {
     imgUrl:
-      "https://cdn.shopify.com/s/files/1/2480/0092/products/1_3a3040ee-e945-4d57-8cab-12d7fe97f10c_2000x.jpg?v=1508712142",
-    name: "Grinder City All Stars",
+      "https://lh3.googleusercontent.com/proxy/88GnbPnJAcbrfJD1oJ2659yy5TtQN90BEjGa-XVOhrRzX7JKBniS0165iQhEhaMx2LI6E3pJ0pjbXls-2kDFEFt-xzghGl0BgBFX1WCJSFMQBbwymqIhSSt_Lb6dDPvtNPQygt19BvAxG5M4hd2sMtZ-zDc",
+    name: "Grind City All Stars",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     price: "$2.50"
@@ -62,14 +69,21 @@ const Container = styled.div`
   min-width: 100vw;
   min-height: 100vh;
   margin-left: -0.5em;
+
+  .header-input-container {
+    display: flex;
+    margin-left: 11em;
+    margin-top: 3em;
+  }
 `;
 
 const TopSellers = styled.h1`
   color: ${lizardGreen};
   font-family: "Nunito sans", sans-serif;
   font-weight: 300;
-  font-size: 5em;
+  font-size: 3em;
   text-align: center;
+  margin-top: 1.8em;
 `;
 
 const TopSellerItemsContainer = styled.div`
@@ -102,7 +116,7 @@ const Price = styled.p`
   font-size: 1.5em;
   font-family: "Nunito sans", sans-serif;
 `;
-const Button = styled.button`
+const ViewButton = styled.button`
   font-weight: 300;
   border: 1px solid ${limeGreen};
   color: ${limeGreen};
@@ -112,19 +126,54 @@ const Button = styled.button`
   font-family: "Nunito sans", sans-serif;
   font-size: 1.2em;
   margin-top: 1em;
-  margin-left: 9.5em;
+  margin-left: 1.5em;
   padding: auto;
   max-height: 1.5em;
   :hover {
-    background-color: ${limeGreen};
+    background-color: ${lizardGreen};
     color: white;
+    border: 1px solid ${lizardGreen};
   }
 `;
+
+const useStyles = makeStyles(theme => ({
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 200,
+    marginTop: 82,
+    marginLeft: 60,
+    fontFamily: "Nunito sans, sans-serif"
+  },
+  selectEmpty: {
+    marginTop: theme.spacing(2)
+  }
+}));
 const RipCentralTopSellers = () => {
+  const classes = useStyles();
   return (
     <>
       <Container>
-        <TopSellers>Top Sellers</TopSellers>
+        <div className="header-input-container">
+          <TopSellers>Top Sellers</TopSellers>
+          <FormControl className={classes.formControl}>
+            <InputLabel id="demo-simple-select-helper-label">
+              View top from the past
+            </InputLabel>
+            <Select
+              labelId="demo-simple-select-helper-label"
+              id="demo-simple-select-helper"
+              // value={age}
+              // onChange={handleChange}
+            >
+              <MenuItem value={3}>3 days</MenuItem>
+              <MenuItem value={7}>7 days</MenuItem>
+              <MenuItem value={30}>30 days</MenuItem>
+            </Select>
+          </FormControl>
+          <div style={{ marginTop: "5.3em", marginLeft: "-1em" }}>
+            <ViewButton>Filter</ViewButton>
+          </div>
+        </div>
         <TopSellerItemsContainer>
           {topSellers.map(i => {
             return (
@@ -135,12 +184,14 @@ const RipCentralTopSellers = () => {
                   <Description>{i.description}</Description>
                   <div style={{ display: "flex" }}>
                     <Price>{i.price}</Price>
-                    <Button>View</Button>
+                    <ViewButton>Bookmark</ViewButton>
+                    <ViewButton>View</ViewButton>
                   </div>
                 </div>
               </>
             );
           })}
+          {/* <Pagination count={3} variant="outlined" /> */}
         </TopSellerItemsContainer>
       </Container>
     </>
