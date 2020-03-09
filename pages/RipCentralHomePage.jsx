@@ -12,7 +12,6 @@ const HomePageBackgroundImage = styled.div`
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.9;
-  position: static;
   box-shadow: 0px 1px 7px ${darkGrey};
   margin-left: -0.5em;
   margin-bottom: -1.4em;
@@ -26,8 +25,8 @@ const RipCentralHomePage = () => {
       <Navbar />
       <HomePageBackgroundImage />
       <RipCentralHomePageHeader />
-      <RipCentralTopSellers />
       <RipCentralHomePageAbout />
+      <RipCentralTopSellers />
     </>
   );
 };

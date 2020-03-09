@@ -25,8 +25,9 @@ const topSellers = [
     price: "$30.00"
   },
   {
-    imgUrl: "https://thumbs.dreamstime.com/b/glass-pipe-12720785.jpg",
-    name: "Extra piece",
+    imgUrl:
+      "https://media.gettyimages.com/photos/smoking-glass-pipe-picture-id496888034?b=1&k=6&m=496888034&s=612x612&w=0&h=vNSnB6z0px0Fsc4xBXslnmzkggaCm9dFyi2tq-do2Jk=",
+    name: "Extra Piece",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     price: "$5.00"
@@ -49,7 +50,7 @@ const topSellers = [
   },
   {
     imgUrl:
-      "https://lh3.googleusercontent.com/proxy/88GnbPnJAcbrfJD1oJ2659yy5TtQN90BEjGa-XVOhrRzX7JKBniS0165iQhEhaMx2LI6E3pJ0pjbXls-2kDFEFt-xzghGl0BgBFX1WCJSFMQBbwymqIhSSt_Lb6dDPvtNPQygt19BvAxG5M4hd2sMtZ-zDc",
+      "https://www.jadeals.com/wp-content/uploads/New-4-Piece-Herb-Grinder-Spice-Tobacco-Weed-Smoke-Zinc-Alloy-Crusher-Leaf-Design-2.jpg",
     name: "Grind City All Stars",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -68,7 +69,6 @@ const topSellers = [
 const Container = styled.div`
   min-width: 100vw;
   min-height: 100vh;
-  margin-left: -0.5em;
 
   .header-input-container {
     display: flex;
@@ -135,43 +135,42 @@ const ViewButton = styled.button`
     border: 1px solid ${lizardGreen};
   }
 `;
-
-const useStyles = makeStyles(theme => ({
-  formControl: {
-    margin: theme.spacing(1),
-    minWidth: 200,
-    marginTop: 82,
-    marginLeft: 60,
-    fontFamily: "Nunito sans, sans-serif"
-  },
-  selectEmpty: {
-    marginTop: theme.spacing(2)
-  }
-}));
 const RipCentralTopSellers = () => {
-  const classes = useStyles();
   return (
     <>
       <Container>
         <div className="header-input-container">
           <TopSellers>Top Sellers</TopSellers>
-          <FormControl className={classes.formControl}>
-            <InputLabel id="demo-simple-select-helper-label">
-              View top from the past
-            </InputLabel>
-            <Select
-              labelId="demo-simple-select-helper-label"
-              id="demo-simple-select-helper"
-              // value={age}
-              // onChange={handleChange}
-            >
-              <MenuItem value={3}>3 days</MenuItem>
-              <MenuItem value={7}>7 days</MenuItem>
-              <MenuItem value={30}>30 days</MenuItem>
-            </Select>
-          </FormControl>
-          <div style={{ marginTop: "5.3em", marginLeft: "-1em" }}>
-            <ViewButton>Filter</ViewButton>
+          <div style={{ display: "flex", marginLeft: "40em" }}>
+            <div style={{ marginTop: "2.2em", marginLeft: "2em" }}>
+              <p
+                style={{
+                  fontFamily: "Nunito sans, sans-serif",
+                  color: `${lizardGreen}`,
+                  fontWeight: "300"
+                }}
+              >
+                View the past
+              </p>
+              <select
+                style={{
+                  width: "20em",
+                  height: "3em",
+                  fontSize: "1em",
+                  color: `${lizardGreen}`,
+                  fontWeight: "300",
+                  border: `${lizardGreen}`
+                }}
+              >
+                <option>24 hours</option>
+                <option>3 days</option>
+                <option>7 days</option>
+                <option>30 days</option>
+              </select>
+            </div>
+            <div style={{ marginTop: "5.2em" }}>
+              <ViewButton>Filter</ViewButton>
+            </div>
           </div>
         </div>
         <TopSellerItemsContainer>
