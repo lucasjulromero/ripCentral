@@ -23,7 +23,7 @@ const NavbarContainer = styled.div`
   background-color: ${darkGrey};
 `;
 
-const RipCentralLogo = styled.h1`
+export const RipCentralLogo = styled.h1`
   font-family: "Nunito sans", sans-serif;
   color: ${lizardGreen};
   font-size: 2em;
@@ -33,7 +33,7 @@ const RipCentralLogo = styled.h1`
   display: flex;
 `;
 
-const CannabisContainer = styled.div`
+export const CannabisContainer = styled.div`
   font-size: 0.6em;
   margin-left: 0.1em;
 `;

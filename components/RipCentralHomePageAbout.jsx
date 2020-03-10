@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  faCannabis,
-  faHandRock,
-  faBong
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   darkGrey,
@@ -75,7 +71,7 @@ const RipCentralHomePageAbout = () => {
             color: `${limeGreen}`
           }}
         >
-          <FontAwesomeIcon icon={faCannabis} />
+          <FontAwesomeIcon icon={faArrowRight} />
         </div>
         <div
           style={{

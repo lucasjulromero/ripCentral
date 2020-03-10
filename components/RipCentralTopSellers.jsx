@@ -69,6 +69,7 @@ const topSellers = [
 const Container = styled.div`
   min-width: 100vw;
   min-height: 100vh;
+  margin-bottom: 8em;
 
   .header-input-container {
     display: flex;

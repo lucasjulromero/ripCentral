@@ -4,8 +4,8 @@ import RipCentralHomePageHeader from "../components/RipCentralHomePageHeader.jsx
 import RipCentralTopSellers from "../components/RipCentralTopSellers";
 import RipCentralHomePageAbout from "../components/RipCentralHomePageAbout";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer.jsx";
 import { darkGrey } from "../styles/colors";
-
 const HomePageBackgroundImage = styled.div`
   min-width: 100vw;
   min-height: 100vh;
@@ -27,6 +27,7 @@ const RipCentralHomePage = () => {
       <RipCentralHomePageHeader />
       <RipCentralHomePageAbout />
       <RipCentralTopSellers />
+      <Footer />
     </>
   );
 };
