@@ -12,11 +12,11 @@ const HomePageBackgroundImage = styled.div`
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.9;
-  box-shadow: 0px 1px 7px ${darkGrey};
+  box-shadow: 0px 1px 15px ${darkGrey};
   margin-left: -0.5em;
   margin-bottom: -1.4em;
   filter: contrast(90%);
-  background-image: url("https://images.unsplash.com/photo-1564171149171-1b0e8c0e0bef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2310&q=80");
+  background-color: black;
 `;
 
 const RipCentralHomePage = () => {

@@ -50,7 +50,7 @@ const topSellers = [
   },
   {
     imgUrl:
-      "https://www.jadeals.com/wp-content/uploads/New-4-Piece-Herb-Grinder-Spice-Tobacco-Weed-Smoke-Zinc-Alloy-Crusher-Leaf-Design-2.jpg",
+      "https://i1.wp.com/cbdgreenvalley.com/wp-content/uploads/2019/12/grav-upright-pocket-bubbler.jpg?fit=400%2C500&ssl=1",
     name: "Grind City All Stars",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",

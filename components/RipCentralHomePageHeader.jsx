@@ -16,7 +16,7 @@ const HeaderIconContainer = styled.div`
   margin-top: 3em;
   height: 50vh;
   width: 100%;
-  color: ${lizardGreen};
+  color: ${limeGreen};
 `;
 const RipCentralHomeHeader = styled.h1`
   font-family: "Nunito sans", sans-serif;
@@ -54,8 +54,8 @@ const Button = styled.button`
   margin-left: -10em;
 
   :hover {
-    background-color: ${lizardGreen};
-    border: 1px solid ${lizardGreen};
+    background-color: ${limeGreen};
+    border: 1px solid ${limeGreen};
   }
 `;
 

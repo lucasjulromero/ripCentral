@@ -19,13 +19,13 @@ const NavbarContainer = styled.div`
   display: grid;
   grid-template-columns: 15% 60% 25%;
   grid-template-rows: 35%;
-  box-shadow: 0px 1px 7px ${darkGrey};
+  box-shadow: 0px 1px 15px black;
   background-color: ${darkGrey};
 `;
 
 export const RipCentralLogo = styled.h1`
   font-family: "Nunito sans", sans-serif;
-  color: ${lizardGreen};
+  color: ${limeGreen};
   font-size: 2em;
   grid-column: 1 / span 2;
   padding-left: 1em;
