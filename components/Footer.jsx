@@ -122,15 +122,15 @@ const Footer = () => {
           }}
         >
           <input
-            style={{ width: "25em", height: "2em" }}
-            placeholder="someemail@example.com"
+            style={{ width: "25em", height: "2em", paddingLeft: "1em" }}
+            placeholder="youremail@example.com"
           />
         </div>
         <div
           style={{
             gridColumn: "1/2 span",
             gridRow: "3/3",
-            marginLeft: "20em",
+            marginLeft: "21em",
             marginTop: "5em"
           }}
         >
