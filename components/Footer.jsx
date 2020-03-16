@@ -12,10 +12,11 @@ import { lizardGreen, limeGreen, lightGrey, darkGrey } from "../styles/colors";
 export const RipCentralLogoFooter = styled.h1`
   font-family: "Nunito sans", sans-serif;
   color: ${limeGreen};
-  font-size: 2em;
+  font-size: 1.5em;
   grid-column: 1 / span 2;
   grid-row: 1 / 3;
-  padding-left: 1em;
+  padding-left: 1.5em;
+  padding-top: 0.6em;
   font-weight: 300;
   display: flex;
 `;
@@ -69,7 +70,7 @@ const Footer = () => {
           style={{
             gridColumn: "1 / span 2",
             gridRow: "1 / 3",
-            marginLeft: "22em",
+            marginLeft: "19em",
             marginTop: "4.9em",
             fontWeight: 300,
             fontFamily: "Nunito sans, sans-serif",
