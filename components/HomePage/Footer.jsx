@@ -7,7 +7,12 @@ import {
   // faInstagram
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { lizardGreen, limeGreen, lightGrey, darkGrey } from "../styles/colors";
+import {
+  lizardGreen,
+  limeGreen,
+  lightGrey,
+  darkGrey
+} from "../../styles/colors";
 
 export const RipCentralLogoFooter = styled.h1`
   font-family: "Nunito sans", sans-serif;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { faCannabis, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { limeGreen, lizardGreen } from "../styles/colors";
+import { limeGreen, lizardGreen } from "../../styles/colors";
 
 const Container = styled.div`
   position: absolute;

@@ -8,7 +8,7 @@ import {
   mediumGrey,
   lizardGreen,
   limeGreen
-} from "../styles/colors";
+} from "../../styles/colors";
 
 const Container = styled.div`
   min-height: 60vh;

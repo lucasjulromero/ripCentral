@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import RipCentralHomePageHeader from "../components/RipCentralHomePageHeader.jsx";
-import RipCentralTopSellers from "../components/RipCentralTopSellers";
-import RipCentralHomePageAbout from "../components/RipCentralHomePageAbout";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer.jsx";
-import { darkGrey } from "../styles/colors";
+import RipCentralHomePageHeader from "../../components/HomePage/RipCentralHomePageHeader.jsx";
+import RipCentralTopSellers from "../../components/HomePage/RipCentralTopSellers";
+import RipCentralHomePageAbout from "../../components/HomePage/RipCentralHomePageAbout";
+import Navbar from "../../components/HomePage/Navbar";
+import Footer from "../../components/HomePage/Footer";
+import { darkGrey } from "../../styles/colors";
 const HomePageBackgroundImage = styled.div`
   min-width: 100vw;
   min-height: 100vh;

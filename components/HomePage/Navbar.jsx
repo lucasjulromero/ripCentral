@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { limeGreen, darkGrey, lizardGreen } from "../styles/colors";
+import { limeGreen, darkGrey, lizardGreen } from "../../styles/colors";
 import {
   faCannabis,
   faShoppingCart,
